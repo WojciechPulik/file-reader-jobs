@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>CSV Employees</title>
+</head>
+<body>
+    <h1>HOME</h1>
+    <h2>--------------------------------------</h2>
+    <h2>Summary salary for JSON file: <a th:href="@{/jsonsalary}"><input type="submit" value="JSON"></a></h2>
+    <h2>Summary salary for CSV file: <a th:href="@{/csvsalary}"><input type="submit" value="CSV"></a></h2>
+    <h2>--------------------------------------</h2>
+    <h2>All employees from JSON file: <a th:href="@{/alljson}"><input type="submit" value="JSON"></a></h2>
+    <h2>All employees from CSV file: <a th:href="@{/allcsv}"><input type="submit" value="CSV"></a></h2>
+	  
+</body>
+</html>

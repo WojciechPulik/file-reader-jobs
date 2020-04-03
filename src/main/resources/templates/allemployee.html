@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>CSV Employees</title>
+</head>
+<body>
+	<a th:href="@{/}">Home Page</a>
+	<br/>
+    <h1>All Employees from <span th:text="${file}"></span> file:</h1>
+    <ul>
+        <li th:each="employee: ${employees}" 
+        th:text="|${employee.id} - ${employee.name} - ${employee.surname} - ${employee.job} - ${employee.salary}|"></li>
+    </ul>
+    
+    
+</body>
+</html>
